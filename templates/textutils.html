@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            align-items: center;
+            height: 60px;
+            background-color: aliceblue;
+            text-align: center;
+        }
+
+        .opt{
+                margin: 10px 0;
+        }
+        .txtarea{
+            /* margin-left: auto;
+            margin-right:auto ; */
+            display: flex;
+            
+        }
+
+        .txtmain{
+            align-items: center;
+            margin-left:auto ;
+            margin-right: auto;
+            width: 90vw;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <h1  class="main">This is a text Analyzer</h1>
+    <h3 style="text-align: center;">coooke</h3>
+    <form action="/removepunctuations" method="GET"> 
+
+        <div class="txtarea">
+        <textarea  class="txtmain" name="text"  id="" cols="30" rows="10"></textarea> <br>
+
+        </div>
+        <input type="checkbox"  name="removepunctuations">Remove punctuations <br>
+        <input type="checkbox"  name="spaceremover">Remove Spaces <br>
+        <input type="checkbox"  name="capitalize">Capitalize <br>
+
+        <button type="submit">Analyze</button>
+    </form>
+</body>
+</html>

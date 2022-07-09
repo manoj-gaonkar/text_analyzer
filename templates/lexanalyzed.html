@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="/static/css/style.css">
+    <title>Analyzed</title>
+</head>
+
+<body class="everylex">
+    <table class="table table-bordered tbl">
+        <tr>
+            <th scope="col">Attribute</th>
+            <th scope="col">Count</th>
+        </tr>
+        <tr>
+            <td>Number of words </td>
+            <td>{{ words }} </td>
+        </tr>
+        <tr>
+            <td>Characters (with spaces)</td>
+            <td>{{ totalwithoutspaces }} </td>
+        </tr>
+        <tr>
+            <td>Characters (without spaces)</td>
+            <td> {{ totalwithspaces }} </td>
+        </tr>
+        <tr>
+            <td>Number of sentences</td>
+            <td>{{ sentences }} </td>
+        </tr>
+        <tr>
+            <td>Numbers</td>
+            <td>{{ num }} </td>
+        </tr>
+    </table>
+</body>
+
+</html>

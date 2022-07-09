@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Text Utilites</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/style.css">
+  <script src="static/js/utils.js"></script>
+</head>
+
+<body class="textutils">
+  <!-- <img src="/static/projectbg-light.png" class="bg-img" id="bg-img" alt=""> -->
+
+  <div class="everything">
+    <!-- navbar beginning -->
+    <nav class="navbar navbar-expand-lg " style="background-color: #e3f2fd00;">
+      <div class="container-fluid">
+        <a class="navbar-brand mb-0 h1 mynav" href="#">Text Analyzer</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About me</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar ending -->
+    <div class="container-md">
+      <!-- <h1  class="h1">This is a text Analyzer</h1>
+        <h3 style="text-align: center;">coooke</h3> -->
+      <br>
+      <br>
+      <form onsubmit="return notfill() " action="/removepunctuations" method="GET" name="form1">
+        <div class="alert alert-dark" role="alert">
+          Enter the text you want to Analyze and press submit.
+        </div>
+
+
+        <div class="txtarea">
+          <textarea class="form-control" name="text" id="txtarea" cols="30" rows="10"></textarea>
+          <p id="error" class="error">*please enter the text you want me to analyze </p>
+        </div>
+
+        <!-- remove punctuations -->
+        <div class="form-check form-switch">
+          <input type="checkbox" class="form-check-input" name="removepunctuations">
+          <label for="removepunctuations" class="form-check-label">Remove punctuations</label>
+        </div>
+        <div class="form-check form-switch">
+          <input type="checkbox" class="form-check-input" name="spaceremover">
+          <label for="spaceremover" class="form-check-label">Remove Spaces</label>
+        </div>
+        <div class="form-check form-switch">
+          <input type="checkbox" class="form-check-input" name="capitalize">
+          <label for="capitalize" class="form-check-label">Capitalize</label>
+        </div>
+        <div class="form-check form-switch">
+          <input type="checkbox" class="form-check-input" name="lexanalyzer">
+          <label for="lexanalyzer" class="form-check-label">ANALYZE</label>
+        </div>
+
+        <br>
+        <br>
+
+        <button type="submit" class="btn btn-outline-primary" id="analyze" style="margin-bottom: 23%;">Analyze</button>
+      </form>
+    </div>
+  </div>
+
+</html>

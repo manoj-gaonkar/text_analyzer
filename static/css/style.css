@@ -1,0 +1,55 @@
+.mynav {
+  margin-left: 50px;
+}
+
+label {
+  transition: all 0.8s ease-in-out;
+  margin-left: 0;
+}
+
+label:hover {
+  transition: all 0.5s ease;
+  margin-left: 10px;
+}
+
+
+.error {
+  color: rgb(255, 67, 67);
+  visibility: hidden;
+  margin: 2px 0 10px 0px;
+  font-size: 15px;
+  transition: all 1s ease-in-out;
+}
+
+body.textutils {
+  background-image: url(../images/projectbg-light.png);
+  background-repeat: no-repeat;
+}
+
+.everything {
+  width: 100%;
+  backdrop-filter: url(../images/projectbg-dark.png) blur(3px);
+  background-color: rgba(255, 255, 255, 0.566);
+  /* backdrop-filter: brightness(60%); */
+  /* backdrop-filter: contrast(40%); */
+  /* backdrop-filter: drop-shadow(4px 4px 10px blue); */
+  /* backdrop-filter: grayscale(90%); */
+  /* backdrop-filter: hue-rotate(120deg); */
+  /* backdrop-filter: invert(70%); */
+  /* backdrop-filter: opacity(90%); */
+  /* backdrop-filter: sepia(90%); */
+  /* backdrop-filter: saturate(20%); */
+
+
+}
+
+.tbl{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.everylex{
+  backdrop-filter: contrast(50%);
+}

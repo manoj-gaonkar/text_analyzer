@@ -1,0 +1,30 @@
+.mynav{
+    margin-left: 50px;
+  }
+
+  label{
+    transition: all 0.8s ease-in-out;
+    margin-left: 0;
+  }
+
+  label:hover{
+    transition: all 0.5s ease;
+    margin-left: 10px;
+  }
+
+
+  .error{
+    visibility: hidden; 
+    margin: 2px 0 10px 6px; 
+    font-size: 15px;  
+    transition: all 1s ease;
+  }
+  .errbeg{
+    visibility: visible;
+    color: green;
+    /* transition: all 0.7s ease-in-out; */
+  }
+  .errend{
+    visibility: hidden;
+    transition: all 0.7s ease-in-out;
+  }
