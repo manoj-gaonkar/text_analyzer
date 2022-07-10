@@ -59,7 +59,7 @@ def removepunctuations(request):
         alpha,space,num,sentences=0,0,0,0
         analyzed=""
         words=len(inputtext.split())
-        sentences=len(inputtext.split('.'))
+        sentences=len(inputtext.split('. '))
         for i in inputtext:
             if(i.isalpha()):
                 alpha+=1
@@ -68,9 +68,7 @@ def removepunctuations(request):
                 continue
             if(i.isnumeric()):
                 num+=1
-    else:
-        return HttpResponse("Your text has not been analyzed")
-    result = { "Task": result , 
+            result1 = { "Task": result , 
     "analyzedresult": analyzed ,
     "alpha":alpha,
     "words":words,
@@ -80,4 +78,10 @@ def removepunctuations(request):
     "totalwithspaces":alpha+space,
     "totalwithoutspaces":alpha
      }
-    return render( request , "lexanalyzed.html" , result )
+        return render( request , "lexanalyzed.html" , result1 )
+    else:
+        return HttpResponse("Your text has not been analyzed")
+    result = { "Task": result , 
+    "analyzedresult": analyzed 
+     }
+    return render( request , "analyzed.html" , result )

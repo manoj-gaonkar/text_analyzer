@@ -44,12 +44,29 @@ body.textutils {
 }
 
 .tbl{
-  display: flex;
-  align-items: center;
+  margin-top: 5%;
+  position: absolute;
+  /* display: flex; */
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  z-index: 0;
 }
 
 .everylex{
+  
+  /* width:; */
+  position: relative;
   backdrop-filter: contrast(50%);
+}
+th,td{
+  width: 18rem;
+}
+.tblhead:nth-child(1){
+  width: 40rem;
+  color: red;
+}
+
+th:nth-of-type(2){
+  color: red;
+  width: 50%;
 }
